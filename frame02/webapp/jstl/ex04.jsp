@@ -16,5 +16,14 @@
 	<p>start</p>
 	<c:import url="ex03.jsp"></c:import>
 	<p>end</p>
+	<c:url value="target.jsp" var="target">
+		<c:param name="id" value="admin"></c:param>
+	</c:url>
+	
+	<a href="${target }">link</a><!-- param 전송 -->
+	
+	<div><!-- div로 숨기고 원하는 값만 파싱해서 사용가능 -->
+	<c:import url="https://www.naver.com"></c:import>
+	</div>
 </body>
 </html>
